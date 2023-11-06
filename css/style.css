@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+
+body{
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    background-color: firebrick;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    background-color: firebrick;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer a{
+    margin: 5px;
+}
+
+.logo{
+    display: flex;
+}
+
+#fondo{
+    background-image: url(../img/2fondo.jpg);
+    background-size: cover;
+    padding: 160px 50px 160px 50px;
+    margin-bottom: 30px;
+}
+
+#fondo p{
+    color: aliceblue;
+}
+
+.boton{
+    background-color: burlywood;
+    color: firebrick;
+    padding: 16px 48px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px;
+}
+
+header a{
+    font-family: 'Krub', sans-serif;
+    color: burlywood;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navegacion a{
+    margin: 10px;
+}
+
+.foto{
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.staff{
+    width: 400px;
+    height: 600px;
+}
+
+.flecha{
+    position: fixed;
+    padding: 1px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: burlywood;
+    right:20px;
+    bottom: 20px;
+}
+
+.imgpor {
+    border-radius: 20px;
+    width: 350px;
+    margin: 5px;
+}
+
+.elegirnos{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
