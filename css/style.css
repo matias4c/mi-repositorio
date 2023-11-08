@@ -37,7 +37,6 @@ footer a{
     background-image: url(../img/2fondo.jpg);
     background-size: cover;
     padding: 160px 50px 160px 50px;
-    margin-bottom: 30px;
 }
 
 #fondo p{
@@ -65,12 +64,6 @@ header a{
     margin: 10px;
 }
 
-.foto{
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-}
-
 .staff{
     width: 400px;
     height: 600px;
@@ -92,8 +85,73 @@ header a{
     margin: 5px;
 }
 
-.elegirnos{
-    text-align: center;
-    margin-bottom: 30px;
+.grid-elegirnos{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas: 
+    "porque porque porque"
+    "exp dif pro"
+    "exp dif pro";
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 100px;
+    height: 575px;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+    border: 1px solid;
+
 }
 
+div#porque{
+    grid-area: porque;
+}
+
+div#exp{
+    grid-area: exp;
+}
+
+div#dif{
+    grid-area: dif;
+}
+
+div#pro{
+    grid-area: pro;
+}
+
+.borde-eleg{
+    border: solid 1px black;
+}
+
+ .grid-elegirnos div{
+    background-color: bisque;
+    text-align: center;
+    border: 1px solid;
+}
+
+.caja{
+    border-radius: 15px;
+    background-color: black;
+    height: 440px;
+    width: 400px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
+    margin: 30px;
+}
+
+.caja .foto{
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+}
+
+.caja h3{
+    display: flex;
+    color: bisque;
+    justify-content: center;
+}
+
+.servicios h2{
+    display: flex;
+    justify-content: center;
+}
