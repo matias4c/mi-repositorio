@@ -31,6 +31,8 @@ footer a{
 
 .logo{
     display: flex;
+    height: 50px;
+    align-items: center;
 }
 
 #fondo{
@@ -165,20 +167,25 @@ div#pro{
     justify-content: center;
 }
 
-.nav-hijo a:hover{
-    background-color: burlywood;
-    color: black;
-}
 
 .navegacion label{
-    font-size: 16px;
+    font-size: 30px;
     color: burlywood;
     display: none;
+    align-items: center;
 }
 
 #check{
     display: none;
 }
+
+@media (min-width:722px){
+    .nav-hijo a:hover{
+        background-color: burlywood;
+        color: black;
+    }
+}
+
 
 @media (max-width:722px){
    .navegacion label{
@@ -186,7 +193,31 @@ div#pro{
    }
 
    .navegacion a{
-    display: none;
+    display: flex;
+    color: black;
+    padding: 10px;
+   }
+
+   .navegacion ul{
+    position: fixed;
+    top: 50px;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+   }
+
+   .nav-padre .nav-hijo{
+    width: 90px;
+   }
+
+   .navegacion #check:checked ~ .nav-padre {
+        background: rgba(222, 184, 135, 0.85);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 34px;
+        display: flex;
    }
 
 }
