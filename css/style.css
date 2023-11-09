@@ -210,6 +210,20 @@ div#pro{
     display: none;
 }
 
+div#man{
+    grid-area: man;
+    
+}
+div#barba{
+    grid-area: barba;
+}
+div#tintura{
+    grid-area: tintura;
+}
+div#kid{
+    grid-area: kid;
+}
+
 @media (min-width:722px){
     .nav-hijo a:hover{
         background-color: burlywood;
@@ -226,7 +240,21 @@ div#pro{
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
         transform: translateY(-3%);
     }
+
+    .servicios-container{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: auto auto;
+        column-gap: 150px;
+        grid-template-areas: 
+        "man barba"
+        "tintura kid";
+        justify-content: center;
+        margin-right: 80px;
+    }
+    
 }
+
 
 
 @media (max-width:722px){
