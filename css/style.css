@@ -60,9 +60,17 @@ header a{
     font-weight: 700;
 }
 
-.navegacion a{
-    margin: 10px;
+.nav-padre{
+    display: flex;
+    list-style: none;
 }
+
+.nav-hijo a{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+ }
+
 
 .staff{
     width: 400px;
@@ -157,3 +165,28 @@ div#pro{
     justify-content: center;
 }
 
+.nav-hijo a:hover{
+    background-color: burlywood;
+    color: black;
+}
+
+.navegacion label{
+    font-size: 16px;
+    color: burlywood;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:722px){
+   .navegacion label{
+    display: block;
+   }
+
+   .navegacion a{
+    display: none;
+   }
+
+}
