@@ -9,7 +9,7 @@ header{
     display: flex;
     height: 50px;
     justify-content: space-between;
-    background-color: firebrick;
+    background-color: black;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ footer{
     display: flex;
     height: 50px;
     justify-content: center;
-    background-color: firebrick;
+    background-color: black;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
@@ -45,7 +45,7 @@ footer a{
 
 .boton{
     background-color: burlywood;
-    color: firebrick;
+    color: black;
     padding: 16px 48px;
     text-decoration: none;
     font-weight: 600;
@@ -72,11 +72,9 @@ header a{
 .flecha{
     position: fixed;
     padding: 1px;
-    border: 1px solid black;
     display: inline-block;
-    background-color: burlywood;
-    right:20px;
-    bottom: 20px;
+    right:10px;
+    bottom: 50px;
 }
 
 .imgpor {
@@ -99,7 +97,7 @@ header a{
     column-gap: 100px;
     height: 575px;
     margin-bottom: 50px;
-    background-color: aquamarine;
+    background-color: white;
     border: 1px solid;
 
 }
@@ -133,10 +131,11 @@ div#pro{
 .caja{
     border-radius: 15px;
     background-color: black;
-    height: 440px;
+    height: 480px;
     width: 400px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
     margin: 30px;
+    padding: 10px;
 }
 
 .caja .foto{
@@ -145,13 +144,16 @@ div#pro{
     height: 400px;
 }
 
-.caja h3{
+.caja .titulo-caja{
     display: flex;
     color: bisque;
+    font-size: 18px;
     justify-content: center;
+
 }
 
 .servicios h2{
     display: flex;
     justify-content: center;
 }
+
