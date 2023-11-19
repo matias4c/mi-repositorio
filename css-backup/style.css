@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+
+body{
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer a{
+    margin: 5px;
+}
+
+#fondo p{
+    font-size: 21px;
+}
+
+.logo{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+#fondo{
+    background-image: url(../img/2fondo.jpg);
+    background-color: rgb(56, 56, 56);
+    background-blend-mode:soft-light;
+    background-size: cover;
+    padding: 220px 50px 220px 50px;
+    
+}
+
+#fondo p{
+    color: aliceblue;
+}
+
+.boton{
+    background-color: burlywood;
+    color: black;
+    padding: 16px 48px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px;
+}
+
+header a{
+    font-family: 'Krub', sans-serif;
+    color: burlywood;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-padre{
+    display: flex;
+    list-style: none;
+}
+
+.nav-hijo a{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+ }
+
+
+.staff{
+    width: 400px;
+    height: 600px;
+}
+
+.video-yt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+
+.imgpor {
+    border-radius: 20px;
+    width: 350px;
+    margin: 5px;
+}
+
+.grid-elegirnos{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas: 
+    "porque porque porque"
+    "exp dif pro"
+    "exp dif pro";
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 100px;
+    height: 575px;
+    margin-bottom: 50px;
+    background-color: bisque;
+
+}
+
+div#porque{
+    grid-area: porque;
+    font-size: 22px;
+    align-self: center;
+    padding: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+    margin-bottom: 80px;
+}
+
+div#exp{
+    grid-area: exp;
+    font-size: 18px;
+    padding: 10px;
+    align-self: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+
+}
+
+div#dif{
+    grid-area: dif;
+    font-size: 18px;
+    padding: 10px;
+    align-self: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+
+}
+
+div#pro{
+    grid-area: pro;
+    font-size: 18px;
+    padding: 10px;
+    align-self: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+    
+}
+
+.borde-eleg{
+    border: solid 1px black;
+}
+
+ .grid-elegirnos div{
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+}
+
+.caja{
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+    height: 480px;
+    width: 400px;
+    margin: 30px;
+    padding: 10px;
+}
+
+
+
+.caja .foto{
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.caja .titulo-caja{
+    display: flex;
+    color: burlywood;
+    font-size: 18px;
+    justify-content: center;
+
+}
+
+.servicios h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.navegacion label{
+    font-size: 30px;
+    color: burlywood;
+    display: none;
+    align-items: center;
+}
+
+#check{
+    display: none;
+}
+
+div#man{
+    grid-area: man;
+    
+}
+div#barba{
+    grid-area: barba;
+}
+div#tintura{
+    grid-area: tintura;
+}
+div#kid{
+    grid-area: kid;
+}
+
+@media (min-width:722px){
+    .nav-hijo a:hover{
+        background-color: burlywood;
+        color: black;
+    }
+    .flecha{
+        position: fixed;
+        padding: 1px;
+        display: inline-block;
+        right:10px;
+        bottom: 50px;
+    }
+    .caja:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+        transform: translateY(-3%);
+    }
+
+    .servicios-container{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: auto auto;
+        column-gap: 150px;
+        grid-template-areas: 
+        "man barba"
+        "tintura kid";
+        justify-content: center;
+        margin-right: 80px;
+    }
+    
+}
+
+
+
+@media (max-width:722px){
+   .navegacion label{
+    display: block;
+   }
+
+   .navegacion a{
+    display: flex;
+    color: black;
+    padding: 10px;
+   }
+
+   .navegacion ul{
+    position: fixed;
+    top: 50px;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+   }
+
+   .nav-padre .nav-hijo{
+    width: 90px;
+   }
+
+   .navegacion #check:checked ~ .nav-padre {
+        background: rgba(222, 184, 135, 0.85);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 34px;
+        display: flex;
+   }
+
+   .grid-elegirnos{
+    grid-template-columns: 300px;
+    grid-template-rows: 50px auto auto auto;
+    grid-template-areas: 
+    "porque"
+    "exp"
+    "dif"
+    "pro";
+   }
+
+   .caja{
+    border-radius: 15px;
+    background-color: black;
+    height: 250px;
+    width: 200px;
+    margin: 15px;
+    padding: 0px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+}
+
+.caja .titulo-caja{
+    display: flex;
+    color: burlywood;
+    font-size: 12px;
+    margin: 0;
+}
+
+.caja .foto{
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.flecha{
+    display: none;
+}
+
+.boton{
+    position: relative;
+    left: 14px;
+}
+
+div#porque{
+    font-size: 22px;
+}
+
+}

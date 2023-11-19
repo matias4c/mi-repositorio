@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+@import './partials/variables';
+
+body{
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    background-color: $color-secundario;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+    a{
+        font-family: 'Krub', sans-serif;
+        color: $color-principal;
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
+
+footer{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    background-color: $color-secundario;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+    a{
+        margin: 5px;
+    }
+}
+
+.logo{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+#fondo{
+    background-image: url(../img/2fondo.jpg);
+    background-color: rgb(56, 56, 56);
+    background-blend-mode:soft-light;
+    background-size: cover;
+    padding: 220px 50px 220px 50px;
+    
+    p{
+        color: aliceblue;
+        font-size: 21px;
+    }
+
+}
+
+.boton{
+    background-color: $color-principal;
+    color: black;
+    padding: 16px 48px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px;
+}
+
+.nav-padre{
+    display: flex;
+    list-style: none;
+}
+
+.nav-hijo{ 
+    a{
+        padding: 5px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+}
+
+.staff{
+    width: 400px;
+    height: 600px;
+}
+
+.video-yt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.imgpor{
+    border-radius: 20px;
+    width: 350px;
+    margin: 5px;
+}
+
+.grid-elegirnos{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas: 
+    "porque porque porque"
+    "exp dif pro"
+    "exp dif pro";
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 100px;
+    height: 575px;
+    margin-bottom: 50px;
+    background-color: bisque;
+
+    div{
+        background-color: $color-principal;
+        color: black;
+        text-align: center;
+    }
+}
+
+div{
+    #porque{
+        grid-area: porque;
+        font-size: 22px;
+        align-self: center;
+        padding: 10px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+        margin-bottom: 80px;
+    }
+
+    #exp{
+        grid-area: exp;
+        font-size: 18px;
+        padding: 10px;
+        align-self: center;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+    }
+
+    #dif{
+        grid-area: dif;
+        font-size: 18px;
+        padding: 10px;
+        align-self: center;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+    }
+
+    #pro{
+        grid-area: pro;
+        font-size: 18px;
+        padding: 10px;
+        align-self: center;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+    }
+}
+
+.borde-eleg{
+    border: solid 1px black;
+}
+
+.caja{
+    border-radius: 15px;
+    background-color: $color-secundario;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+    height: 480px;
+    width: 400px;
+    margin: 30px;
+    padding: 10px;
+
+    .foto{
+        border-radius: 15px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .titulo-caja{
+        display: flex;
+        color: $color-principal;
+        font-size: 18px;
+        justify-content: center;
+    }
+
+}
+
+.servicios{ 
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.navegacion{
+    label{
+        font-size: 30px;
+        color: $color-principal;
+        display: none;
+        align-items: center;
+    }
+}
+
+#check{
+    display: none;
+}
+
+div{
+    #man{
+        grid-area: man;
+    }
+
+    #barba{
+        grid-area: barba;
+    }
+
+    #tintura{
+        grid-area: tintura;
+    }
+
+    #kid{
+        grid-area: kid;
+    }
+}
+
+
+@media (min-width:722px){
+    .nav-hijo{
+        a{
+            &:hover{
+                background-color: $color-principal;
+                color: $color-secundario;
+            }
+        }
+    }
+    .flecha{
+        position: fixed;
+        padding: 1px;
+        display: inline-block;
+        right:10px;
+        bottom: 50px;
+    }
+    .caja:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+        transform: translateY(-3%);
+    }
+
+    .servicios-container{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: auto auto;
+        column-gap: 150px;
+        grid-template-areas: 
+        "man barba"
+        "tintura kid";
+        justify-content: center;
+        margin-right: 80px;
+    }
+    
+}
+
+
+
+@media (max-width:722px){
+    .navegacion{
+        label{
+            display: block;
+        }
+
+        a{
+            display: flex;
+            color: $color-secundario;
+            padding: 10px;
+        }
+
+        ul{
+            position: fixed;
+            top: 50px;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
+   .nav-padre .nav-hijo{
+    width: 90px;
+   }
+
+   .navegacion #check:checked ~ .nav-padre {
+        background: rgba(222, 184, 135, 0.85);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 34px;
+        display: flex;
+   }
+
+   .grid-elegirnos{
+    grid-template-columns: 300px;
+    grid-template-rows: 50px auto auto auto;
+    grid-template-areas: 
+    "porque"
+    "exp"
+    "dif"
+    "pro";
+   }
+
+   .caja{
+    border-radius: 15px;
+    background-color: $color-secundario;
+    height: 250px;
+    width: 200px;
+    margin: 15px;
+    padding: 0px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+
+    .titulo-caja{
+        display: flex;
+        color: $color-principal;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .foto{
+        border-radius: 15px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.flecha{
+    display: none;
+}
+
+.boton{
+    position: relative;
+    left: 14px;
+}
+
+div#porque{
+    font-size: 22px;
+}
+
+}
