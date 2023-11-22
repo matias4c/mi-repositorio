@@ -1,0 +1,249 @@
+@media (min-width:722px){
+    .nav-hijo{
+        a{
+            &:hover{
+                background-color: $color-principal;
+                color: $color-secundario;
+            }
+        }
+    }
+    .flecha{
+        position: fixed;
+        padding: 1px;
+        display: inline-block;
+        right:10px;
+        bottom: 50px;
+    }
+    .caja:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+        transform: scale(1.05);
+    }
+
+    .servicios-container{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: auto auto;
+        column-gap: 150px;
+        grid-template-areas: 
+        "man barba"
+        "tintura kid";
+        justify-content: center;
+        margin-right: 80px;
+    }
+    
+    .contenedor-form{
+        display: flex;
+        flex-direction: column;
+    
+        .formulario{
+            height: 400px;
+            width: 40%;
+            margin: 15px;
+            margin-bottom: 50px;
+            background-color: #222222;
+            display: flex;
+            flex-direction: column;
+            align-items:start;
+            justify-content: space-around;
+            padding: 0 20px 10px 20px;
+            box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    
+    
+            .div-form{
+                width: calc(95%);
+                padding: 0;
+    
+            }
+    
+            label{
+                color: white;
+                font-size: 1rem;
+            }
+    
+            strong{
+                color: $color-principal;
+                font-size: 1.5rem;
+            }
+    
+            input,textarea{
+                color: white;
+                width: 100%;
+                height: 10px;
+                padding: 10px;
+                background-color: black;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: solid $color-principal 1px;
+            }
+    
+            .enviar{
+                background-color: black;
+                color: white;
+                border: none;
+                width: 50px;
+                height: 30px;
+                cursor: pointer;
+                transition: all 0.3s;
+    
+                &:active{
+                    background-color: #deb887;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:722px){
+    .navegacion{
+        label{
+            display: block;
+        }
+
+        a{
+            display: flex;
+            color: $color-secundario;
+            padding: 10px;
+        }
+
+        ul{
+            position: fixed;
+            top: 50px;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
+   .nav-padre .nav-hijo{
+    width: 90px;
+   }
+
+   .navegacion #check:checked ~ .nav-padre {
+        background: rgba(222, 184, 135, 0.973);
+        width: 94.4%;
+        height: 45vh;
+        position: absolute;
+        left: 0;
+        top: 34px;
+        display: flex;
+   }
+
+   .grid-elegirnos{
+    grid-template-columns: 300px;
+    grid-template-rows: 50px auto auto auto;
+    grid-template-areas: 
+    "porque"
+    "exp"
+    "dif"
+    "pro";
+    row-gap: 50px;
+    height: 190vh;
+   }
+
+   .caja{
+    border-radius: 15px;
+    background-color: $color-secundario;
+    height: 250px;
+    width: 200px;
+    margin: 15px;
+    padding: 0px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+
+    .titulo-caja{
+        display: flex;
+        color: $color-principal;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .foto{
+        border-radius: 15px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.flecha{
+    display: none;
+}
+
+div#porque{
+    font-size: 22px;
+}
+
+.servicios-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-form{
+    display: flex;
+    flex-direction: column;
+
+    .formulario{
+        height: 400px;
+        width: calc(100%-30px);
+        margin: 15px;
+        margin-bottom: 50px;
+        background-color: #222222;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content: space-around;
+        padding: 0 20px 10px 20px;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0);
+
+
+        .div-form{
+            width: calc(95%);
+            padding: 0;
+
+        }
+
+        label{
+            color: white;
+            font-size: 1rem;
+        }
+
+        strong{
+            color: $color-principal;
+            font-size: 1.5rem;
+        }
+
+        input,textarea{
+            color: white;
+            width: 100%;
+            height: 10px;
+            padding: 10px;
+            background-color: black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: solid $color-principal 1px;
+        }
+
+        .enviar{
+            background-color: black;
+            color: white;
+            border: none;
+            width: 50px;
+            height: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:active{
+                background-color: #deb887;
+                color: black;
+            }
+        }
+    }
+
+}
+}
