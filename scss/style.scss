@@ -2,9 +2,9 @@
 @import './partials/variables';
 
 body{
+    background-image: url(../img/piedrabeige.jpg);
     font-family: 'Krub', sans-serif;
     margin: 0;
-    background-image: url(../img/piedrabeige.jpg);
 }
 
 header{
@@ -107,6 +107,7 @@ footer{
 }
 
 .grid-elegirnos{
+    background-image: url(../img/piedrabeige.jpg);
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 50px auto auto;
@@ -119,7 +120,6 @@ footer{
     row-gap: 20px;
     column-gap: 60px;
     height: 575px;
-    background-image: url(../img/piedrabeige.jpg);
     height: 100vh;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
