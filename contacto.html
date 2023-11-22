@@ -30,30 +30,41 @@
         </nav>
     </header>
 
-    <h2>Contacto</h2>
-    <form>
-       <fieldset>
-        <legend>Escribinos por consultas o para reservar un turno</legend>
-        <div>
+    <section class="contenedor-form">
+    <form class="formulario">
+        <strong>Contacto</strong>
+        
+        <div class="div-form">
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Escribe tu Nombre">
+        <input type="text" id="nombre" placeholder="Escribe tu Nombre" required>
         </div>
-        <div>
+
+        <div class="div-form">
         <label for="telefono">Telefono</label>
-        <input type="tel" id="telefono" placeholder="Escribe tu numero de telefono">
+        <input type="tel" id="telefono" placeholder="Escribe tu numero de telefono" required>
         </div>
-        <div>
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" placeholder="Escribe tu email">
+
+        <div class="div-form">
+        <label for="correo">Email</label>
+        <input type="email" id="correo" placeholder="Escribe tu email" required>
         </div>
-        <div>
+
+        <div class="div-form">
         <label for="mensaje">Mensaje</label>
         <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea> 
         </div>
-        <input type="submit" value="Enviar">
-       </fieldset>
+        
+        <div class="div-form">
+        <button type="submit" class="enviar">Enviar</button>
+        </div>
+
     </form>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3404.572719839978!2d-64.18864492516444!3d-31.42589639670973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI1JzMzLjIiUyA2NMKwMTEnMDkuOSJX!5e0!3m2!1ses-419!2sar!4v1697089896897!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3404.572719839978!2d-64.18864492516444!3d-31.42589639670973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDI1JzMzLjIiUyA2NMKwMTEnMDkuOSJX!5e0!3m2!1ses-419!2sar!4v1697089896897!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
+
+
 
     <footer>
         <a class="instagram" href="https://www.instagram.com/" target="_blank">

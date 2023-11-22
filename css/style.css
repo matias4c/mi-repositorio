@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap");
 body {
   font-family: 'Krub', sans-serif;
-  margin: 0; }
+  margin: 0;
+  background-image: url(/img/piedrabeige.jpg); }
 
 header {
   display: flex;
@@ -43,14 +44,19 @@ footer {
     color: aliceblue;
     font-size: 21px; }
 
-.boton {
-  background-color: burlywood;
-  color: black;
-  padding: 16px 48px;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-block;
-  margin: 10px; }
+.boton-padre {
+  display: flex;
+  justify-content: center; }
+  .boton-padre .boton {
+    background-color: burlywood;
+    color: black;
+    padding: 16px 48px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px;
+    border: outset 3px black;
+    background-image: linear-gradient(to right, #f7d4a7, #f1cd9f, #eac697, #e4bf8f, #deb887); }
 
 .nav-padre {
   display: flex;
@@ -78,20 +84,23 @@ footer {
 
 .grid-elegirnos {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 300px 300px 300px;
   grid-template-rows: 50px auto auto;
   grid-template-areas: "porque porque porque" "exp dif pro" "exp dif pro";
   justify-content: center;
   align-content: center;
   row-gap: 20px;
-  column-gap: 100px;
+  column-gap: 60px;
   height: 575px;
-  margin-bottom: 50px;
-  background-color: bisque; }
+  background-image: url(/img/piedrabeige.jpg);
+  height: 100vh;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black; }
   .grid-elegirnos div {
-    background-color: burlywood;
+    background-color: black;
     color: black;
-    text-align: center; }
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #deb887, #f8c2b2, #fdd4db, #f9eaf6, #ffffff); }
 
 div #porque {
   grid-area: porque;
@@ -104,20 +113,28 @@ div #exp {
   grid-area: exp;
   font-size: 18px;
   padding: 10px;
-  align-self: center;
-  box-shadow: 2px 2px 15px black; }
+  box-shadow: 2px 2px 15px black;
+  height: 200px;
+  display: flex;
+  align-items: center; }
 div #dif {
   grid-area: dif;
   font-size: 18px;
   padding: 10px;
   align-self: center;
-  box-shadow: 2px 2px 15px black; }
+  box-shadow: 2px 2px 15px black;
+  height: 200px;
+  display: flex;
+  align-items: center; }
 div #pro {
   grid-area: pro;
   font-size: 18px;
   padding: 10px;
   align-self: center;
-  box-shadow: 2px 2px 15px black; }
+  box-shadow: 2px 2px 15px black;
+  height: 200px;
+  display: flex;
+  align-items: center; }
 
 .borde-eleg {
   border: solid 1px black; }
@@ -129,7 +146,8 @@ div #pro {
   height: 480px;
   width: 400px;
   margin: 30px;
-  padding: 10px; }
+  padding: 10px;
+  transition: all .5s; }
   .caja .foto {
     border-radius: 15px;
     width: 400px;
@@ -140,9 +158,13 @@ div #pro {
     font-size: 18px;
     justify-content: center; }
 
-.servicios h2 {
+.servicios {
   display: flex;
+  flex-direction: column;
   justify-content: center; }
+  .servicios h2 {
+    display: flex;
+    justify-content: center; }
 
 .navegacion label {
   font-size: 30px;
@@ -162,6 +184,52 @@ div #tintura {
 div #kid {
   grid-area: kid; }
 
+.contenedor-form {
+  display: flex;
+  flex-direction: column; }
+  .contenedor-form .formulario {
+    height: 400px;
+    width: 40%;
+    margin: 15px;
+    margin-bottom: 50px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding: 0 20px 10px 20px;
+    box-shadow: 5px 5px 20px black; }
+    .contenedor-form .formulario .div-form {
+      width: calc(95%);
+      padding: 0; }
+    .contenedor-form .formulario label {
+      color: white;
+      font-size: 1rem; }
+    .contenedor-form .formulario strong {
+      color: burlywood;
+      font-size: 1.5rem; }
+    .contenedor-form .formulario input, .contenedor-form .formulario textarea {
+      color: white;
+      width: 100%;
+      height: 10px;
+      padding: 10px;
+      background-color: black;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: solid burlywood 1px; }
+    .contenedor-form .formulario .enviar {
+      background-color: black;
+      color: white;
+      border: none;
+      width: 50px;
+      height: 30px;
+      cursor: pointer;
+      transition: all 0.3s; }
+      .contenedor-form .formulario .enviar:active {
+        background-color: #deb887;
+        color: black; }
+
 @media (min-width: 722px) {
   .nav-hijo a:hover {
     background-color: burlywood;
@@ -176,7 +244,7 @@ div #kid {
 
   .caja:hover {
     box-shadow: 5px 5px 20px black;
-    transform: translateY(-3%); }
+    transform: scale(1.05); }
 
   .servicios-container {
     display: grid;
@@ -204,9 +272,9 @@ div #kid {
     width: 90px; }
 
   .navegacion #check:checked ~ .nav-padre {
-    background: rgba(222, 184, 135, 0.85);
+    background: rgba(222, 184, 135, 0.973);
     width: 100%;
-    height: 100vh;
+    height: 45vh;
     position: absolute;
     left: 0;
     top: 34px;
@@ -215,7 +283,9 @@ div #kid {
   .grid-elegirnos {
     grid-template-columns: 300px;
     grid-template-rows: 50px auto auto auto;
-    grid-template-areas: "porque" "exp" "dif" "pro"; }
+    grid-template-areas: "porque" "exp" "dif" "pro";
+    row-gap: 50px;
+    height: 190vh; }
 
   .caja {
     border-radius: 15px;
@@ -225,8 +295,7 @@ div #kid {
     margin: 15px;
     padding: 0px 5px 5px 5px;
     display: flex;
-    flex-direction: column;
-    margin-left: 18%; }
+    flex-direction: column; }
     .caja .titulo-caja {
       display: flex;
       color: burlywood;
@@ -240,11 +309,13 @@ div #kid {
   .flecha {
     display: none; }
 
-  .boton {
-    position: relative;
-    left: 14px; }
-
   div#porque {
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  .servicios-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 /*# sourceMappingURL=style.css.map */

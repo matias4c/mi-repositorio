@@ -4,6 +4,7 @@
 body{
     font-family: 'Krub', sans-serif;
     margin: 0;
+    background-image: url(/img/piedrabeige.jpg);
 }
 
 header{
@@ -56,16 +57,23 @@ footer{
     }
 
 }
+.boton-padre{
+    display: flex;
+    justify-content: center;
 
-.boton{
-    background-color: $color-principal;
-    color: black;
-    padding: 16px 48px;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-    margin: 10px;
+    .boton{
+        background-color: $color-principal;
+        color: black;
+        padding: 16px 48px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        margin: 10px;
+        border: outset 3px black;
+        background-image: linear-gradient(to right, #f7d4a7, #f1cd9f, #eac697, #e4bf8f, #deb887);
+    }
 }
+
 
 .nav-padre{
     display: flex;
@@ -100,7 +108,7 @@ footer{
 
 .grid-elegirnos{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 300px 300px 300px;
     grid-template-rows: 50px auto auto;
     grid-template-areas: 
     "porque porque porque"
@@ -109,15 +117,19 @@ footer{
     justify-content: center;
     align-content: center;
     row-gap: 20px;
-    column-gap: 100px;
+    column-gap: 60px;
     height: 575px;
-    margin-bottom: 50px;
-    background-color: bisque;
+    background-image: url(/img/piedrabeige.jpg);
+    height: 100vh;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
 
     div{
-        background-color: $color-principal;
+        background-color: $color-secundario;
         color: black;
         text-align: center;
+        background-image: linear-gradient(to right bottom, #deb887, #f8c2b2, #fdd4db, #f9eaf6, #ffffff);
+        // background-image: linear-gradient(to right, #f7d4a7, #f1cd9f, #eac697, #e4bf8f, #deb887);
     }
 }
 
@@ -135,8 +147,10 @@ div{
         grid-area: exp;
         font-size: 18px;
         padding: 10px;
-        align-self: center;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+        height: 200px;
+        display: flex;
+        align-items: center;
     }
 
     #dif{
@@ -145,6 +159,9 @@ div{
         padding: 10px;
         align-self: center;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+        height: 200px;
+        display: flex;
+        align-items: center;
     }
 
     #pro{
@@ -153,6 +170,9 @@ div{
         padding: 10px;
         align-self: center;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+        height: 200px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -168,6 +188,7 @@ div{
     width: 400px;
     margin: 30px;
     padding: 10px;
+    transition: all .5s;
 
     .foto{
         border-radius: 15px;
@@ -185,6 +206,10 @@ div{
 }
 
 .servicios{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     h2{
         display: flex;
         justify-content: center;
@@ -222,6 +247,131 @@ div{
     }
 }
 
+.contenedor-form{
+    display: flex;
+    flex-direction: column;
+
+    .formulario{
+        height: 400px;
+        width: 40%;
+        margin: 15px;
+        margin-bottom: 50px;
+        background-color: #222222;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content: space-around;
+        padding: 0 20px 10px 20px;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0);
+
+
+        .div-form{
+            width: calc(95%);
+            padding: 0;
+
+        }
+
+        label{
+            color: white;
+            font-size: 1rem;
+        }
+
+        strong{
+            color: $color-principal;
+            font-size: 1.5rem;
+        }
+
+        input,textarea{
+            color: white;
+            width: 100%;
+            height: 10px;
+            padding: 10px;
+            background-color: black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: solid $color-principal 1px;
+        }
+
+        .enviar{
+            background-color: black;
+            color: white;
+            border: none;
+            width: 50px;
+            height: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:active{
+                background-color: #deb887;
+                color: black;
+            }
+        }
+    }
+}
+
+
+
+// .contenedor-form{
+//     position: relative;
+//     background-color: rgba(255, 102, 51, 0.85);
+//     left: 5%;
+//     padding: 20px;
+//     width: 440px;
+//     height: 500px;
+//     color: #fff;
+// }
+
+// .contenedor-form{
+//     background-color: gray;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+// }
+
+// .contenedor-form form {
+//     height: 200px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: start;
+//     justify-content: space-evenly;
+// }
+
+// form .div-form {
+//     width: 100%;
+//     padding: 7px 0;
+// }
+
+// .div-form{
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+// .div-form input, select {
+//     height: 30px;
+//     padding: 3px;
+//     display: inline;
+//     width: 100%;
+//     outline: none;
+//     background-color: #fff;
+//     border: none;
+// }
+
+// .div-form input[type=checkbox] {
+//     display: inline-block;
+//     width: auto;
+
+// }
+
+// .form__control input[type=checkbox]+label {
+//     display: inline-block;
+// }
+
+
+
+
 
 @media (min-width:722px){
     .nav-hijo{
@@ -241,7 +391,7 @@ div{
     }
     .caja:hover{
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
-        transform: translateY(-3%);
+        transform: scale(1.05);
     }
 
     .servicios-container{
@@ -255,7 +405,7 @@ div{
         justify-content: center;
         margin-right: 80px;
     }
-    
+        
 }
 
 
@@ -286,9 +436,9 @@ div{
    }
 
    .navegacion #check:checked ~ .nav-padre {
-        background: rgba(222, 184, 135, 0.85);
+        background: rgba(222, 184, 135, 0.973);
         width: 100%;
-        height: 100vh;
+        height: 45vh;
         position: absolute;
         left: 0;
         top: 34px;
@@ -303,6 +453,8 @@ div{
     "exp"
     "dif"
     "pro";
+    row-gap: 50px;
+    height: 190vh;
    }
 
    .caja{
@@ -314,7 +466,6 @@ div{
     padding: 0px 5px 5px 5px;
     display: flex;
     flex-direction: column;
-    margin-left: 18%;
 
     .titulo-caja{
         display: flex;
@@ -335,12 +486,19 @@ div{
 }
 
 .boton{
-    position: relative;
-    left: 14px;
+   
 }
 
 div#porque{
     font-size: 22px;
 }
 
+.servicios-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+}
+
