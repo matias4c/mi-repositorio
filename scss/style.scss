@@ -49,14 +49,25 @@ footer{
     background-color: rgb(56, 56, 56);
     background-blend-mode:soft-light;
     background-size: cover;
-    padding: 220px 50px 220px 50px;
-    
+    // padding: 220px 50px 220px 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    strong{
+        color: aliceblue;
+        font-size: 1.5rem;
+    }
+
     p{
         color: aliceblue;
-        font-size: 21px;
+        font-size: 1.5rem;
     }
 
 }
+
 .boton-padre{
     display: flex;
     justify-content: center;
@@ -86,13 +97,6 @@ footer{
         margin: 5px;
         border-radius: 10px;
     }
-}
-
-.video-yt{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
 }
 
 .imgpor{
@@ -272,15 +276,16 @@ div{
 
         p{
             color: white;
-            padding: 10px;
+            padding: 30px;
             text-align: justify;
+            margin-top: 0px;
         }
 
         .texto-staff{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: start;
+            align-items: center;
         }
     }
 
