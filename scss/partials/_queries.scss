@@ -313,11 +313,24 @@ div#porque{
     .video-yt{
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
         width: calc(90%-20px);
+        margin-top: 50px;
         margin-bottom: 50px;
         padding-left: 15px;
         padding-right: 15px;
+
+        strong{
+            text-align: center;
+            width: 100%;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: $color-principal;
+            background-color: $color-terciario;
+        }
     }
 
     #fondo{
@@ -326,11 +339,31 @@ div#porque{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         p{
             text-align: center;
         }
     }
 
+    .imgpf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h2{
+            margin-bottom: 0px;
+        }
+    }
+
+    .imgpor{
+        border-radius: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 80%;
+        height: auto;
+    }
 }
 
 

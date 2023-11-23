@@ -449,11 +449,22 @@ div #kid {
   .video-yt {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: calc(90%-20px);
+    margin-top: 50px;
     margin-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px; }
+    .video-yt strong {
+      text-align: center;
+      width: 100%;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      color: burlywood;
+      background-color: #222222; }
 
   #fondo {
     height: 100vh;
@@ -462,7 +473,23 @@ div #kid {
     justify-content: center;
     align-items: center; }
     #fondo p {
-      text-align: center; } }
+      text-align: center; }
+
+  .imgpf {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .imgpf h2 {
+      margin-bottom: 0px; }
+
+  .imgpor {
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 80%;
+    height: auto; } }
 @media (min-width: 900px) and (max-width: 1100px) {
   .staff {
     display: flex;
