@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap");
 body {
+  background-image: url(../img/piedrabeige.jpg);
   font-family: 'Krub', sans-serif;
-  margin: 0;
-  background-image: url(../img/piedrabeige.jpg); }
+  margin: 0; }
 
 header {
   display: flex;
@@ -67,10 +67,6 @@ footer {
   margin: 5px;
   border-radius: 10px; }
 
-.staff {
-  width: 400px;
-  height: 600px; }
-
 .video-yt {
   display: flex;
   justify-content: center;
@@ -83,6 +79,7 @@ footer {
   margin: 5px; }
 
 .grid-elegirnos {
+  background-image: url(../img/piedrabeige.jpg);
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 50px auto auto;
@@ -91,33 +88,35 @@ footer {
   align-content: center;
   row-gap: 20px;
   column-gap: 60px;
-  height: 575px;
-  background-image: url(../img/piedrabeige.jpg);
   height: 100vh;
   border-top: solid 2px black;
   border-bottom: solid 2px black; }
   .grid-elegirnos div {
-    background-color: black;
     color: black;
-    text-align: center;
-    background-image: linear-gradient(to right bottom, #deb887, #f8c2b2, #fdd4db, #f9eaf6, #ffffff); }
+    text-align: center; }
 
 div #porque {
   grid-area: porque;
-  font-size: 22px;
+  font-size: 1.8rem;
   align-self: center;
   padding: 10px;
-  box-shadow: 2px 2px 15px black;
-  margin-bottom: 80px; }
+  margin-bottom: 10px;
+  border: none;
+  background-image: none;
+  background-color: none; }
 div #exp {
+  background-color: #222222;
   grid-area: exp;
   font-size: 18px;
   padding: 10px;
   box-shadow: 2px 2px 15px black;
   height: 200px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: white;
+  border-bottom: burlywood 5px solid; }
 div #dif {
+  background-color: #222222;
   grid-area: dif;
   font-size: 18px;
   padding: 10px;
@@ -125,8 +124,11 @@ div #dif {
   box-shadow: 2px 2px 15px black;
   height: 200px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: white;
+  border-bottom: burlywood 5px solid; }
 div #pro {
+  background-color: #222222;
   grid-area: pro;
   font-size: 18px;
   padding: 10px;
@@ -134,22 +136,23 @@ div #pro {
   box-shadow: 2px 2px 15px black;
   height: 200px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: white;
+  border-bottom: burlywood 5px solid; }
 
 .borde-eleg {
   border: solid 1px black; }
 
 .caja {
-  border-radius: 15px;
-  background-color: black;
-  box-shadow: 5px 5px 20px black;
+  background-color: #222222;
+  box-shadow: 5px 5px 20px 5px black;
   height: 480px;
   width: 400px;
   margin: 30px;
   padding: 10px;
   transition: all .5s; }
   .caja .foto {
-    border-radius: 15px;
+    border-radius: 30px;
     width: 400px;
     height: 400px; }
   .caja .titulo-caja {
@@ -183,6 +186,34 @@ div #tintura {
   grid-area: tintura; }
 div #kid {
   grid-area: kid; }
+
+.staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .staff .div-staff {
+    box-shadow: 5px 5px 20px 5px black;
+    display: flex;
+    flex-direction: row;
+    background-color: #222222;
+    width: 60%;
+    margin: 15px; }
+    .staff .div-staff strong {
+      font-size: 1.5rem;
+      padding: 10px;
+      color: burlywood; }
+    .staff .div-staff p {
+      color: white;
+      padding: 10px;
+      text-align: justify; }
+    .staff .div-staff .texto-staff {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start; }
+  .staff .foto-staff {
+    height: 500px;
+    width: 400px; }
 
 @media (min-width: 722px) {
   .nav-hijo a:hover {

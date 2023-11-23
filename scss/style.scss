@@ -5,7 +5,6 @@ body{
     background-image: url(../img/piedrabeige.jpg);
     font-family: 'Krub', sans-serif;
     margin: 0;
-    background-image: url(../img/piedrabeige.jpg);
 }
 
 header{
@@ -89,11 +88,6 @@ footer{
     }
 }
 
-.staff{
-    width: 400px;
-    height: 600px;
-}
-
 .video-yt{
     display: flex;
     justify-content: center;
@@ -120,32 +114,33 @@ footer{
     align-content: center;
     row-gap: 20px;
     column-gap: 60px;
-    height: 575px;
-    background-image: url(../img/piedrabeige.jpg);
     height: 100vh;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
 
     div{
-        background-color: $color-secundario;
         color: black;
-        text-align: center;
-        background-image: linear-gradient(to right bottom, #deb887, #f8c2b2, #fdd4db, #f9eaf6, #ffffff);
+        text-align:center;
+        // background-image: linear-gradient(to right bottom, #deb887, #f8c2b2, #fdd4db, #f9eaf6, #ffffff);
         // background-image: linear-gradient(to right, #f7d4a7, #f1cd9f, #eac697, #e4bf8f, #deb887);
+        // background-image: linear-gradient(to right bottom, #deb887, #f4bea7, #fdcac8, #fcd9e4, #f9eaf6, #f9eaf6, #f9eaf6, #f9eaf6, #fcd9e4, #fdcac8, #f4bea7, #deb887);
     }
 }
 
 div{
     #porque{
         grid-area: porque;
-        font-size: 22px;
+        font-size: 1.8rem;
         align-self: center;
         padding: 10px;
-        box-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
-        margin-bottom: 80px;
+        margin-bottom: 10px;
+        border: none;
+        background-image: none;
+        background-color: none;
     }
 
     #exp{
+        background-color: #222222;
         grid-area: exp;
         font-size: 18px;
         padding: 10px;
@@ -153,9 +148,12 @@ div{
         height: 200px;
         display: flex;
         align-items: center;
+        color: white;
+        border-bottom: $color-principal 5px solid;
     }
 
     #dif{
+        background-color: #222222;
         grid-area: dif;
         font-size: 18px;
         padding: 10px;
@@ -164,9 +162,12 @@ div{
         height: 200px;
         display: flex;
         align-items: center;
+        color: white;
+        border-bottom: $color-principal 5px solid;
     }
 
     #pro{
+        background-color: #222222;
         grid-area: pro;
         font-size: 18px;
         padding: 10px;
@@ -175,6 +176,8 @@ div{
         height: 200px;
         display: flex;
         align-items: center;
+        color: white;
+        border-bottom: $color-principal 5px solid;
     }
 }
 
@@ -183,9 +186,8 @@ div{
 }
 
 .caja{
-    border-radius: 15px;
-    background-color: $color-secundario;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+    background-color: $color-terciario;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 1);
     height: 480px;
     width: 400px;
     margin: 30px;
@@ -193,7 +195,7 @@ div{
     transition: all .5s;
 
     .foto{
-        border-radius: 15px;
+        border-radius: 30px;
         width: 400px;
         height: 400px;
     }
@@ -248,5 +250,51 @@ div{
         grid-area: kid;
     }
 }
+
+.staff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .div-staff{
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 1);
+        display: flex;
+        flex-direction: row;
+        background-color: $color-terciario;
+        width: 60%;
+        margin: 15px;
+
+        strong{
+            font-size: 1.5rem;
+            padding: 10px;
+            color: $color-principal;
+        }
+
+        p{
+            color: white;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .texto-staff{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+    }
+
+
+    .foto-staff{
+        height: 500px;
+        width: 400px;
+    }
+
+
+}
+
+
+
+
 
 @import './partials/queries';

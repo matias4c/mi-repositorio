@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="peluqueria, peluquero, corte de pelo, barberia, barba, tintura de pelo">
+    <meta name="description" content="Conoce a nuestro equipo de trabajo, con bastante experiencia en el oficio.">
     <link rel="shortcut icon" href="../img/razor.svg" type="image/xml-svg">
     <title>Nosotros</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,13 +35,29 @@
         </nav>
     </header>
 
-    <div class="nombre-staff">
+    <div class="staff">
         <h2>Nuestro equipo de trabajo</h2>
-        <ul>
-            <li>Nombre 2</li>
-            <img class="staff" src="img/hombre2.jpg" alt="Peluquero" title="Peluquero">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias sit quae, ut facere odio quisquam eligendi. Perspiciatis soluta architecto sint, nostrum officiis laboriosam a voluptatem, odio ipsum qui dolores!</p>
-        </ul>
+        <div data-aos="fade-up-right" class="div-staff">
+            <img class="foto-staff" src="img/hombre1-min.jpg" alt="Peluquero Matias Gutiérrez" title="Peluquero Matias Gutiérrez">
+            <div class="texto-staff">
+                <strong>Matias Gutiérrez</strong>
+                <p>Soy Matias Gutiérrez y llevo más de 10 años dedicado al mundo de la Peluqueria. Desde muy joven estuve interesado en este oficio, por lo que he creado de mi hobby y pasión mi trabajo.</p>
+            </div>
+        </div>
+        <div data-aos="fade-up-left" class="div-staff">
+            <div class="texto-staff">
+                <strong>Juan Díaz</strong>
+                <p>Comenzé como peluquero a mis 17 años. En toda mi trayectoria me dediqué a aprender y mejorar cada día mas, por lo que fui perfeccionandome en varias areas. Me especializo en cortes modernos y clásicos, razurado o rebajas de barba, perfilado de cejas, líneas y diseños en tu degradé.  </p>
+            </div>
+            <img class="foto-staff" src="img/hombre2-min.jpg" alt="Peluquero y barbero Juan Díaz" title="Peluquero y barbero Juan Díaz">
+        </div>
+        <div data-aos="fade-up-right" class="div-staff">
+            <img class="foto-staff" src="img/hombre3-min.jpg" alt="Peluquero y estilista Santiago Cima" title="Peluquero y estilista Santiago Cima">
+            <div class="texto-staff">
+                <strong>Santiago Cima</strong>
+                <p>Artista, apasionado de mi trabajo. Me desempeño como peluquero y estilista desde hace 12 años. Realizo cortes, peinados y coloración.</p>
+            </div>
+        </div>
     </div>
 
     <a class="flecha" href="#top">
@@ -71,5 +91,9 @@
         </a>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
