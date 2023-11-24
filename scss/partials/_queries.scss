@@ -33,12 +33,14 @@
     
     .contenedor-form{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     
         .formulario{
             height: 400px;
             width: 40%;
             margin: 15px;
+            margin-top: 50px;
             margin-bottom: 50px;
             background-color: #222222;
             display: flex;
@@ -90,6 +92,45 @@
                     background-color: #deb887;
                     color: black;
                 }
+            }
+        }
+
+        .mapa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .video-contenedor{
+        display: flex;
+        justify-content: center;
+    
+        .video-yt{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+    
+            strong{
+                text-align: center;
+                width: 100%;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                color: $color-principal;
+                background-color: $color-terciario;
             }
         }
     }
@@ -356,12 +397,12 @@ div#porque{
     }
 
     .imgpor{
-        border-radius: 50px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-        width: 80%;
+        border-radius: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 70%;
         height: auto;
     }
 }
