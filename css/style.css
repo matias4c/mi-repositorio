@@ -55,15 +55,14 @@ footer {
   display: flex;
   justify-content: center; }
   .boton-padre .boton {
-    background-color: burlywood;
     color: black;
+    background-color: burlywood;
     padding: 16px 48px;
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
     margin: 10px;
-    border: outset 3px black;
-    background-image: linear-gradient(to right, #f7d4a7, #f1cd9f, #eac697, #e4bf8f, #deb887); }
+    border: outset 3px black; }
 
 .nav-padre {
   display: flex;
@@ -106,6 +105,7 @@ div #porque {
   background-image: none;
   background-color: none; }
 div #exp {
+  color: white;
   background-color: #222222;
   grid-area: exp;
   font-size: 18px;
@@ -114,9 +114,9 @@ div #exp {
   height: 200px;
   display: flex;
   align-items: center;
-  color: white;
   border-bottom: burlywood 5px solid; }
 div #dif {
+  color: white;
   background-color: #222222;
   grid-area: dif;
   font-size: 18px;
@@ -126,9 +126,9 @@ div #dif {
   height: 200px;
   display: flex;
   align-items: center;
-  color: white;
   border-bottom: burlywood 5px solid; }
 div #pro {
+  color: white;
   background-color: #222222;
   grid-area: pro;
   font-size: 18px;
@@ -138,7 +138,6 @@ div #pro {
   height: 200px;
   display: flex;
   align-items: center;
-  color: white;
   border-bottom: burlywood 5px solid; }
 
 .borde-eleg {
