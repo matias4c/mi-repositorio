@@ -339,6 +339,45 @@ div{
 }
 
 
+.contenedor-error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .title-error{
+        color: red;
+        font-size: 150px;
+        margin: 0px;
+    }
+
+    .texto-error{
+        font-size: 1.1rem;
+    }
+
+    .mensaje-error{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+
+        .title2-error{
+            margin: 0px;
+        }
+    }
+
+    .boton-error{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        background-color: limegreen;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
 
 
 
