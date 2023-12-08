@@ -244,7 +244,7 @@ div #kid {
 .mapa {
   display: flex;
   justify-content: center;
-  width: calc(90%-20px);
+  width: 92%;
   margin-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px; }
@@ -278,7 +278,7 @@ div #kid {
     padding: 5px;
     border-radius: 5px; }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .nav-hijo a:hover {
     background-color: burlywood;
     color: black; }
@@ -306,7 +306,9 @@ div #kid {
   .contenedor-form {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    height: 90vh; }
     .contenedor-form .formulario {
       height: 400px;
       width: 40%;
@@ -321,7 +323,7 @@ div #kid {
       padding: 0 20px 10px 20px;
       box-shadow: 5px 5px 20px black; }
       .contenedor-form .formulario .div-form {
-        width: calc(95%);
+        width: 95%;
         padding: 0; }
       .contenedor-form .formulario label {
         color: white;
@@ -382,7 +384,7 @@ div #kid {
         border-top-right-radius: 10px;
         color: burlywood;
         background-color: #222222; } }
-@media (max-width: 900px) {
+@media (max-width: 1099px) {
   .navegacion label {
     display: block; }
   .navegacion a {
@@ -452,10 +454,12 @@ div #kid {
 
   .contenedor-form {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center;
+    height: 91vh; }
     .contenedor-form .formulario {
       height: 400px;
-      width: calc(100%-30px);
+      width: 85%;
       margin: 15px;
       margin-bottom: 50px;
       background-color: #222222;
@@ -466,7 +470,7 @@ div #kid {
       padding: 0 20px 10px 20px;
       box-shadow: 5px 5px 20px black; }
       .contenedor-form .formulario .div-form {
-        width: calc(95%);
+        width: 95%;
         padding: 0; }
       .contenedor-form .formulario label {
         color: white;
@@ -536,30 +540,33 @@ div #kid {
   .mapa {
     display: flex;
     justify-content: center;
-    width: calc(90%-20px);
+    width: 90%;
     margin-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px; }
 
-  .video-yt {
+  .video-contenedor {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc(90%-20px);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    .video-yt strong {
-      text-align: center;
-      width: 100%;
-      padding-top: 7px;
-      padding-bottom: 7px;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      color: burlywood;
-      background-color: #222222; }
+    justify-content: center; }
+    .video-contenedor .video-yt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .video-contenedor .video-yt strong {
+        text-align: center;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: burlywood;
+        background-color: #222222; }
 
   #fondo {
     height: 100vh;
@@ -596,7 +603,7 @@ div #kid {
     text-align: center;
     margin-right: 20px;
     margin-left: 20px; } }
-@media (min-width: 900px) and (max-width: 1100px) {
+@media (min-width: 625px) and (max-width: 1099px) {
   .staff {
     display: flex;
     flex-direction: column;
@@ -628,7 +635,30 @@ div #kid {
         justify-content: center;
         align-items: center; }
     .staff .foto-staff {
-      height: 500px;
-      width: 400px; } }
+      height: 300px;
+      width: auto; }
+
+  .video-contenedor {
+    display: flex;
+    justify-content: center; }
+    .video-contenedor .video-yt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 65%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .video-contenedor .video-yt strong {
+        text-align: center;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: burlywood;
+        background-color: #222222; } }
 
 /*# sourceMappingURL=style.css.map */
